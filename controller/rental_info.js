@@ -30,7 +30,6 @@ const BookedController = (req, res) => {
             return
         }else{
             if(find1.returned_day != null){
-                //reader kitobni returned qilgandan keyin olayotganda
                 library.rental_info.push({
                     reader_id:idr,
                     book_id:idb,
