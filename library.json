@@ -3,98 +3,88 @@
 		{
 			"id": 1,
 			"fname": "John",
-			"lname": "Aliy",
+			"lname": "Doe",
 			"email": "john.doe@example.com",
 			"phone": "+998987654321",
 			"dateOfBirth": "20-04-1998",
 			"address": "221B Baker Street, London",
-			"createdAt": "2022-08-11T18:22:48.536Z"
+			"createdAt": "2022-08-15T06:10:04.762Z"
 		},
 		{
 			"id": 2,
-			"fname": "John",
-			"lname": "Do",
+			"fname": "Son",
+			"lname": "Xyon",
 			"email": "john.doe@example.com",
 			"phone": "+998987654321",
 			"dateOfBirth": "20-04-1998",
 			"address": "221B Baker Street, London",
-			"createdAt": "2022-08-11T18:22:58.902Z"
-		},
-		{
-			"id": 3,
-			"fname": "John",
-			"lname": "Do",
-			"email": "john.doe@example.com",
-			"phone": "+998987654321",
-			"dateOfBirth": "20-04-1998",
-			"address": "221B Baker Street, London",
-			"createdAt": "2022-08-11T18:23:07.007Z"
+			"createdAt": "2022-08-15T06:12:01.569Z"
 		}
 	],
 	"books": [
 		{
 			"id": 1,
 			"isbn": "978-0393058000",
-			"title": "Sherlock Holmes1",
+			"title": "Sherlock Holmes",
 			"gener": "fictional detective",
 			"description": "Sherlock Holmes (/ˈʃɜːrlɒk ˈhoʊmz/) is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a consulting detective in the stories, Holmes is known for his proficiency with observation, deduction, forensic science and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.",
 			"author": "Arthur Conan Doyle",
 			"publishYear": 2008,
 			"cover_photo_url": "https://images-na.ssl-images-amazon.com/images/I/91hJe52QzjL.jpg",
-			"createdAt": "2022-08-11T14:36:56.794Z",
-			"updatedAt": "2022-08-11T18:24:09.048Z"
-		},
-		{
-			"id": 2,
-			"isbn": "978-0393058000",
-			"title": "Olim",
-			"gener": "fictional detective",
-			"description": "Sherlock Holmes (/ˈʃɜːrlɒk ˈhoʊmz/) is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a consulting detective in the stories, Holmes is known for his proficiency with observation, deduction, forensic science and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.",
-			"author": "Arthur Conan Doyle",
-			"publishYear": 2008,
-			"cover_photo_url": "https://images-na.ssl-images-amazon.com/images/I/91hJe52QzjL.jpg",
-			"createdAt": "2022-08-11T18:23:38.420Z"
+			"createdAt": "2022-08-15T06:12:12.551Z",
+			"updatedAt": "2022-08-15T06:13:32.306Z"
 		},
 		{
 			"id": 3,
 			"isbn": "978-0393058000",
-			"title": "Bori",
+			"title": "Ertaklar vodiysi",
 			"gener": "fictional detective",
 			"description": "Sherlock Holmes (/ˈʃɜːrlɒk ˈhoʊmz/) is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a consulting detective in the stories, Holmes is known for his proficiency with observation, deduction, forensic science and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.",
 			"author": "Arthur Conan Doyle",
 			"publishYear": 2008,
 			"cover_photo_url": "https://images-na.ssl-images-amazon.com/images/I/91hJe52QzjL.jpg",
-			"createdAt": "2022-08-11T18:24:39.170Z"
+			"createdAt": "2022-08-15T06:12:46.505Z"
+		},
+		{
+			"id": 2,
+			"isbn": "978-0393058000",
+			"title": "Vodiy",
+			"gener": "fictional detective",
+			"description": "Sherlock Holmes (/ˈʃɜːrlɒk ˈhoʊmz/) is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a consulting detective in the stories, Holmes is known for his proficiency with observation, deduction, forensic science and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.",
+			"author": "Arthur Conan Doyle",
+			"publishYear": 2008,
+			"cover_photo_url": "https://images-na.ssl-images-amazon.com/images/I/91hJe52QzjL.jpg",
+			"createdAt": "2022-08-15T06:14:30.511Z"
 		}
 	],
 	"rental_info": [
 		{
 			"reader_id": 1,
+			"book_id": 2,
+			"booked_day": "2022-08-15T06:14:49.290Z",
+			"returned_day": "2022-08-15T06:15:14.990Z",
+			"created_at": "2022-08-15T06:15:14.990Z"
+		},
+		{
+			"reader_id": 1,
 			"book_id": 1,
-			"booked_day": "2022-08-11T15:13:48.435Z",
-			"returned_day": "2022-08-11T18:27:18.870Z",
-			"created_at": "2022-08-11T18:27:18.870Z"
+			"booked_day": "2022-08-15T06:17:34.511Z",
+			"returned_day": null,
+			"created_at": "2022-08-15T06:17:34.511Z"
 		},
 		{
 			"reader_id": 2,
 			"book_id": 1,
-			"booked_day": "2022-08-11T18:25:26.168Z",
-			"returned_day": "2022-08-11T18:25:35.380Z",
-			"created_at": "2022-08-11T18:25:35.380Z"
+			"booked_day": "2022-08-15T06:19:56.654Z",
+			"returned_day": "2022-08-15T06:20:09.840Z",
+			"created_at": "2022-08-15T06:20:09.840Z"
 		},
 		{
 			"reader_id": 2,
 			"book_id": 1,
-			"booked_day": "2022-08-11T18:25:44.136Z",
-			"returned_day": "2022-08-11T18:25:51.563Z",
-			"created_at": "2022-08-11T18:25:51.563Z"
-		},
-		{
-			"reader_id": 2,
-			"book_id": 1,
-			"booked_day": "2022-08-11T18:25:45.975Z",
-			"returned_day": "2022-08-11T18:26:27.588Z",
-			"created_at": "2022-08-11T18:26:27.588Z"
+			"booked_day": "2022-08-15T06:20:15.783Z",
+			"returned_day": null,
+			"created_at": "2022-08-15T06:20:15.783Z"
 		}
 	]
 }

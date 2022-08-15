@@ -26,24 +26,24 @@ const BookedController = (req, res) => {
                 created_at:new Date()
             })
             DB.saveToFile(library, fileName)
-            res.status(200).json("Saccessfully created!")
-            return
-        }else{
-            if(find1.returned_day != null){
-                library.rental_info.push({
-                    reader_id:idr,
-                    book_id:idb,
-                    booked_day:new Date(),
-                    returned_day:null,
-                    created_at:new Date()
-                })
-                DB.saveToFile(library, fileName)
-                res.status(200).json("Saccessfully created!")
-                return
-            }
-            res.status(200).json("Book isn't returned!")
+            res.status(200).json("1Saccessfully created!")
             return
         }
+        let found = library.rental_info.find(r => r.reader_id == idr && r.returned_day == null)
+        if(!found){
+            library.rental_info.push({
+                reader_id:idr,
+                book_id:idb,
+                booked_day:new Date(),
+                returned_day:null,
+                created_at:new Date()
+            })
+            DB.saveToFile(library, fileName)
+            res.status(200).json("2Saccessfully created!")
+            return
+        }
+        res.status(200).json("Book isn't returned!")
+        return          
         
     }else{
         res.status(400).json("reader_id and book_id are required!");

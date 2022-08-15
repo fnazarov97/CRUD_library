@@ -1,4 +1,5 @@
 const DB = require('../data/data')
+// const DB1 = require('../postgres')
 const fileName = "library.json"
 const { validateReader } = require('../validation')
 
@@ -55,16 +56,18 @@ const UpdateControllerById = (req, res) => {
     const library = DB.readFromFile(fileName)
     let id = req.params.id
     let reader = req.body
+    let index = library.readers.findIndex(element => element["id"] == id)
     if(!validateReader(res, reader)){
         return
     }
-    if(!library.readers[id-1]){
+    if(!library.readers[index]){
         res.status(404).json(`${id}-id reader not found!`)
         return
     }
-    reader.createdAt = library.readers[id-1].createdAt
+    
+    reader.createdAt = library.readers[index].createdAt
     reader.updatedAt = new Date()
-    library.readers[id-1] = reader
+    library.readers[index] = reader
     DB.saveToFile(library, fileName)
     res.status(200).json("Saccessfully updated!")
 }
@@ -90,5 +93,6 @@ module.exports = {
     ReadControllerByName,
     UpdateControllerById,
     DeleteControllerById
+
 
 }
